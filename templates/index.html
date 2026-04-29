@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Controller</title>
+</head>
+<body>
+    <h1>Your Playlists</h1>
+
+    {% for p in playlists %}
+        <div>
+            <h3>{{ p.name }}</h3>
+            <p>{{ p.tracks }} songs</p>
+        </div>
+    {% endfor %}
+
+    <a href="/volume">Go to Volume Control</a>
+</body>
+</html>

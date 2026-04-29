@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volume Control</title>
+</head>
+<body>
+    <h1>Volume Control</h1>
+
+    <form method="POST">
+        <input type="range" name="volume" min="0" max="100">
+        <button type="submit">Set Volume</button>
+    </form>
+
+    {% if volume %}
+        <p>Volume set to: {{ volume }}</p>
+    {% endif %}
+
+    <a href="/">Back</a>
+</body>
+</html>
